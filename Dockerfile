@@ -6,6 +6,7 @@ WORKDIR /app
 
 # 将当前目录下的 test.py 复制到容器的 /app 目录中
 COPY test.py /app/
+COPY requirements.txt /app/
 
 # 在容器中安装可能需要的依赖
 # RUN pip install Flask -i https://pypi.tuna.tsinghua.edu.cn/simple
