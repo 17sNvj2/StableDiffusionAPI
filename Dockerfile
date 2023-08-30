@@ -8,7 +8,7 @@ WORKDIR /app
 COPY test.py /app/
 
 # 在容器中安装可能需要的依赖
-# RUN pip install some_package
+RUN pip install Flask
 
 # 指定容器启动时要执行的命令，这里运行 test.py
 CMD ["python", "test.py"]
